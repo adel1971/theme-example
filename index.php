@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <?php wp_head(); ?>
 </head>
 <body>
 
-<article>
+
     <?php
         if( have_posts() ):
             while ( have_posts() ):
@@ -19,6 +20,6 @@
             endwhile;
             endif;
     ?>
-</article>
+
 </body>
 </html>
